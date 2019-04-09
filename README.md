@@ -1,4 +1,4 @@
-# tdl-warmup-ruby
+# The Makers Academy Challenge: Fizz Deluxe
 
 This is a coding challenge designed by Makers to feel more like day to day development rather than a traditional coding exercise. It has five set of requirements that challenge your design decisions. Info [here](https://intro.accelerate.io/vfsh01/HXFGAR/index.html).
 
