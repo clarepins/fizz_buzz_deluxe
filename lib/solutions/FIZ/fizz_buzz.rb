@@ -3,38 +3,30 @@ class FizzBuzz
 
   def fizz_buzz(number)
     @number = number
-    @return = ""
-    @return += 'fizz ' if output_fizz?
-    @return += 'buzz ' if output_buzz?
-    return @return += 'fake deluxe' if output_fake_deluxe?
-    @return += 'deluxe' if output_deluxe?
+    @return = ''
+    @return += 'fizz ' if divisible_by?(3) || contains?(3)
+    @return += 'buzz ' if divisible_by?(5) || contains?(5)
+    @return += 'fake ' if fake?
+    @return += 'deluxe' if deluxe?
     @return = @number.to_s if @return == ""
     @return.rstrip
   end
 
 private
 
-  def output_fake_deluxe?
-    @number % 2 == 1 && output_deluxe?
+  def fake?
+    @number % 2 == 1
   end
 
-  def output_deluxe?
-    return true if contains?(3) && @number % 3 == 0
-    return true if contains?(5) && @number % 5 == 0
+  def deluxe?
+    contains?(3) && divisible_by?(3) || contains?(5) && divisible_by?(5)
   end
 
-  def output_fizz?
-    return true if @number % 3 == 0
-    return true if contains?(3)
-  end
-
-  def output_buzz?
-    return true if @number % 5 == 0
-    return true if contains?(5)
+  def divisible_by?(num)
+    @number % num == 0
   end
 
   def contains?(num)
     @number.to_s.include? num.to_s
   end
-
 end

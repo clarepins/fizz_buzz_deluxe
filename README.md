@@ -17,3 +17,7 @@ This is a coding challenge designed by Makers to feel more like day to day devel
 - Install dependencies `bundle install`
 - Open `lib/send_command_to_server.rb`
 - Read the comments as documentation, they will guide through the rest of the setup
+
+### 3. Run tests
+
+- $ `rake test`
