@@ -11,6 +11,7 @@ This is a coding challenge designed by Makers to feel more like day to day devel
 
 - `Ruby 2.2.2`
 - `bundler`
+- The test required that the answer was stored in a `@return` var and the game was called inside a class `FizzBuzz` and method `fizz_buzz`
 
 ### 2. How to start
 
